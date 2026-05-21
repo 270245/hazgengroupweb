@@ -35,3 +35,20 @@ header.style.background = "#223326";
 }
 
 });
+// ================= MOBILE MENU =================
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+const mobileNav =
+document.getElementById("mobileNav");
+
+if(menuToggle){
+
+menuToggle.addEventListener("click", () => {
+
+mobileNav.classList.toggle("active");
+
+});
+
+}
