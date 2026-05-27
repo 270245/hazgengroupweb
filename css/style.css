@@ -19,7 +19,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 8%;
-background:#223326;
+background:rgba(34,51,38,0.95);
+backdrop-filter:blur(8px);
 position:fixed;
 top:0;
 width:100%;
@@ -402,25 +403,63 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 /* ================= RESPONSIVE ================= */
 
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:900px){
 
 header{
-flex-direction:column;
-gap:20px;
-padding:20px;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+padding:14px 5%;
+
+background:rgba(34,51,38,0.95);
+backdrop-filter:blur(8px);
+
+}
+
+.logo img{
+width:55px;
+}
+
+.logo h2{
+font-size:22px;
 }
 
 nav{
+display:flex;
 flex-wrap:wrap;
 justify-content:center;
+gap:18px;
+}
+
+nav a{
+font-size:15px;
+}
+
+.quote-btn{
+padding:10px 18px;
+font-size:14px;
+border-radius:8px;
+}
+
+.hero{
+padding-top:110px;
 }
 
 .hero-content h1{
 font-size:45px;
+line-height:1.2;
+}
+
+.hero-content p{
+font-size:18px;
 }
 
 .hero-buttons{
 flex-direction:column;
+align-items:center;
 }
 
 .about,
@@ -433,7 +472,7 @@ grid-template-columns:1fr;
 }
 
 .about{
-padding-top:150px;
+padding-top:120px;
 }
 
 }
